@@ -1,3 +1,10 @@
+import { Container } from "@mui/material";
+import { SignInForm } from "components";
+
 export const SignIn: React.FC = () => {
-  return <h1>Signin Page</h1>
-}
+  return (
+    <Container>
+      <SignInForm />
+    </Container>
+  );
+};
