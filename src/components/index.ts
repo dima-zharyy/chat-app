@@ -3,3 +3,7 @@ export * from "./SharedLayout/SharedLayout";
 export * from "./SignInForm/SignInForm";
 export * from "./SignUpForm/SignUpForm";
 export * from "./SignUpLink/SignUpLink";
+export * from "./ChatInputBar/ChatInputBar";
+export * from "./ChatSidebar/ChatSidebar";
+export * from "./ChatUserMenu/ChatUserMenu";
+export * from "./ChatWindow/ChatWindow";
