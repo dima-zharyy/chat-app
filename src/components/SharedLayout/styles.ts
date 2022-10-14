@@ -1,4 +1,4 @@
-export const containerStyle = {
+export const boxStyle = {
   height: "100vh",
   backgroundColor: "teal",
 };

@@ -1,7 +1,7 @@
-import { Container } from "@mui/material";
+import { Box } from "@mui/material";
 import { useEffect } from "react";
 import { Outlet, useNavigate } from "react-router-dom";
-import { containerStyle } from "./styles";
+import { boxStyle } from "./styles";
 
 const HOST = "http://localhost:3000/";
 
@@ -15,8 +15,8 @@ export const SharedLayout: React.FC = () => {
   }, [navigate]);
 
   return (
-    <Container sx={containerStyle}>
+    <Box sx={boxStyle}>
       <Outlet />
-    </Container>
+    </Box>
   );
 };

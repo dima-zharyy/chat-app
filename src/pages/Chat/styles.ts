@@ -1,9 +1,4 @@
-export const chatContainer = {
+export const chatBox = {
   display: "grid",
-  gridTemplateColumns: "20% 80%",
-};
-
-export const boxStyles = {
-  display: "grid",
-  gridTemplateRows: "20vh 70vh 10vh",
+  gridTemplateColumns: "5% 25% 70%",
 };

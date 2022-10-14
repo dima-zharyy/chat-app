@@ -1,4 +1,4 @@
-export const ChatSidebar: React.FC = () => {
+export const ChatList: React.FC = () => {
   return (
     <aside>
       <h3>Chat logo</h3>

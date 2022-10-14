@@ -1,21 +1,14 @@
-import { Box, Container } from "@mui/material";
-import {
-  ChatInputBar,
-  ChatSidebar,
-  ChatUserMenu,
-  ChatWindow,
-} from "components";
-import { boxStyles, chatContainer } from "./styles";
+import { Box } from "@mui/material";
+import { ChatList, ChatUserMenu } from "components";
+import { Outlet } from "react-router-dom";
+import { chatBox } from "./styles";
 
 export const Chat: React.FC = () => {
   return (
-    <Container sx={chatContainer}>
-      <ChatSidebar />
-      <Box component="div" sx={boxStyles}>
-        <ChatUserMenu />
-        <ChatWindow />
-        <ChatInputBar />
-      </Box>
-    </Container>
+    <Box sx={chatBox}>
+      <ChatUserMenu />
+      <ChatList />
+      <Outlet />
+    </Box>
   );
 };
