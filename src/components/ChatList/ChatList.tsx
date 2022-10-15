@@ -1,6 +1,5 @@
 import {
   Avatar,
-  Divider,
   TextField,
   List,
   ListItem,
@@ -9,6 +8,7 @@ import {
 } from "@mui/material";
 import { Box } from "@mui/system";
 import React from "react";
+import { styles } from "./styles";
 
 const users = [
   "Public room",
@@ -25,7 +25,15 @@ const users = [
 
 export const ChatList: React.FC = () => {
   return (
-    <Box component="div" sx={{ backgroundColor: "white" }}>
+    <Box
+      component="div"
+      sx={{
+        ...styles,
+        backgroundColor: "white",
+        maxHeight: "100%",
+        overflow: "auto",
+      }}
+    >
       <Box component="div" sx={{ p: 1 }}>
         <TextField fullWidth label="search" color="secondary" />
       </Box>
@@ -35,7 +43,7 @@ export const ChatList: React.FC = () => {
           width: "100%",
           maxWidth: 360,
           bgcolor: "background.paper",
-          overflowY: "auto",
+          height: "max-content",
         }}
       >
         {users.map((user: string) => {
