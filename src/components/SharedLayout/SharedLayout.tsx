@@ -15,7 +15,7 @@ export const SharedLayout: React.FC = () => {
   }, [navigate]);
 
   return (
-    <Box sx={boxStyle}>
+    <Box component="div" sx={boxStyle}>
       <Outlet />
     </Box>
   );
